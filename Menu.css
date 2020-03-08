@@ -1,0 +1,93 @@
+body{
+	font-family: Arial, Helvetica, sans-serif
+}
+*{
+	margin:0;
+
+	list-style: none;
+	text-decoration: none;
+	padding:0;
+	
+}
+.sidebar{
+	position: fixed;
+	left: -250px;
+	height: 100%;
+	width: 250px;
+	background:#00264d;
+	
+
+}
+.sidebar header{
+	font-size: 30px;
+	background: #4d004d;
+	text-align: center;
+	color: white;
+	line-height: : 70px;
+	user-select: none;
+	
+
+}
+.sidebar ul a{
+	display: block;
+	line-height: 70px;
+	padding-left: 30px;
+	color: white;
+	height: 100%
+	width:100%;
+	font-size:20px; 
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid black;
+	transition: .4s
+}
+a:hover{
+	padding-bottom: 10px;
+
+}
+#check
+{
+	display: none;
+}
+label #btn,label #cancle{
+	position: absolute;
+	cursor: pointer;
+	background: #042331;
+	border-radius: 3px;
+	transition: all 0.5s;
+}
+label #btn{
+	left: 40px;
+	top:20px;
+	padding: 6px 12px;
+	font-size:30px;
+	color:red;
+	transition :all .05s;
+}
+label #cancle{
+	z-index: 1111;
+	color: white;
+	left: -195px;
+	top:10px;
+	font-size: 20px;
+	padding: 4px 9px;
+	transition: all .05s ease;
+
+}
+#check:checked ~ .sidebar{
+	left:0px;
+	
+
+} 
+#check:checked ~label #cancle{
+	left: 195px;
+
+	
+}
+section
+{
+	background-image: url(vlcsnap-2020-03-06-23h37m19s281.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
